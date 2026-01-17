@@ -3,7 +3,7 @@ import json
 import re
 import requests
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 def classify_and_reply(email_text: str) -> dict:
