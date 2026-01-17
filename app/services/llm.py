@@ -4,7 +4,7 @@ import json
 
 import requests
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "eu")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")  
 
 def classify_and_reply(email_text: str) -> dict:
@@ -49,3 +49,5 @@ EMAIL:
     # Tenta parsear JSON robustamente
     data = json.loads(content)
     return data
+
+print("OPENAI_API_KEY loaded:", bool(OPENAI_API_KEY))
