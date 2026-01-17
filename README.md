@@ -1,4 +1,6 @@
 # Email Triage AI (Produtivo vs Improdutivo)
+## 🌐 Aplicação Online (Google Cloud Run)
+👉 https://email-triage-ai-415570267531.us-central1.run.app/
 
 Aplicação web simples para **classificar emails** como **Produtivo** ou **Improdutivo** e **sugerir uma resposta automática** com base no conteúdo.
 
