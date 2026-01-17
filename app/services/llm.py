@@ -1,11 +1,11 @@
 import os
 import json
 
-# Exemplo com OpenAI via requests (simples). Você pode trocar por SDK.
+
 import requests
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")  # exemplo
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")  
 
 def classify_and_reply(email_text: str) -> dict:
     if not OPENAI_API_KEY:
